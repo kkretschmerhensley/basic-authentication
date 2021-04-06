@@ -7,12 +7,12 @@ import {
   FileProtectOutlined
 } from '@ant-design/icons';
 
-const Nav = (props) => {
+const Nav = ({current}) => {
   return (
     <div>
       <Menu selectedKeys={[current]} mode="horizontal">
         <Menu.Item key='home'>
-          <Link to=`/`>
+          <Link to='/'>
             <HomeOutlined />Home
           </Link>
         </Menu.Item>
