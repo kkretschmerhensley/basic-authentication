@@ -19,13 +19,19 @@ const Nav = ({current}) => {
 
         <Menu.Item key='profile'>
           <Link to='/profile'>
-          <ProfileOutlined />Profile
+            <ProfileOutlined />Profile
           </Link>
         </Menu.Item>
 
         <Menu.Item key='protected'>
           <Link to='/protected'>
             <FileProtectOutlined />Protected
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="morepublic">
+          <Link to='/morepublic'>
+            <ProfileOutlined />More Public
           </Link>
         </Menu.Item>
       </Menu>

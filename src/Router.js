@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Public from './Public';
 import Profile from './Profile';
 import Protected from './Protected';
+import More from './MorePublic';
 
 const Router = () => {
   const [current, setCurrent] = useState('home');
@@ -29,6 +30,7 @@ const Router = () => {
         <Route exact path="/" component={Public}/>
         <Route exact path="/protected" component={Protected} />
         <Route exact path="/profile" component={Profile}/>
+        <Route exact path="/morepublic" component={More}/>
         <Route component={Public}/>
       </Switch>
     </HashRouter>
